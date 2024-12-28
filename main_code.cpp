@@ -33,7 +33,16 @@ int productCount = 0;
 
 
 //function to print all the products
-
+void printProducts() {
+    for (int i = 0; i < productCount; i++) {
+        cout << "ID: " << productIDs[i] << endl;
+        cout << "Name: " << productNames[i] << endl;
+        cout << "Category: " << productCategories[i] << endl;
+        cout << "Price: $" << productPrices[i] << endl;
+        cout << "Quantity: " << productQuantities[i] << endl;
+        cout << "------------------------" << endl;
+    }
+}
 
 //function to save to file
 
