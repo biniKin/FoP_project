@@ -22,7 +22,28 @@ int productCount = 0;
 
 
 //function to remove products
+void removeProduct(int id) {
+    bool found = false;
+    for (int i = 0; i < productCount; i++) {
+        if (productIDs[i] == id) {
+            for (int j = i; j < productCount - 1; j++) {
+                productIDs[j] = productIDs[j + 1];
+                productNames[j] = productNames[j + 1];
+                productCategories[j] = productCategories[j + 1];
+                productPrices[j] = productPrices[j + 1];
+                productQuantities[j] = productQuantities[j + 1];
+            }
+            productCount--;
+            found = true;
+            cout << "Product removed successfully." << endl;
+            break;
+        }
+    }
 
+    if (!found) {
+        cout << "ID does not exist." << endl;
+    }
+}
 
 
 //function to find products
