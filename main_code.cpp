@@ -69,7 +69,19 @@ void removeProduct(int id) {
 
 
 //function to update products
-
+void updateProduct(int id, string name, string category, double price, int quantity) {
+    for (int i = 0; i < productCount; i++) {
+        if (productIDs[i] == id) {
+            productNames[i] = name;
+            productCategories[i] = category;
+            productPrices[i] = price;
+            productQuantities[i] = quantity;
+            cout << "Product updated successfully." << endl;
+            return;
+        }
+    }
+    cout << "ID does not exist." << endl;
+}
 
 
 //function to print all the products
