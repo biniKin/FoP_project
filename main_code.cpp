@@ -66,7 +66,19 @@ void removeProduct(int id) {
 
 
 //function to find products
-
+void findProduct(int id) {
+    for (int i = 0; i < productCount; i++) {
+        if (productIDs[i] == id) {
+            cout << "ID: " << productIDs[i] << endl;
+            cout << "Name: " << productNames[i] << endl;
+            cout << "Category: " << productCategories[i] << endl;
+            cout << "Price: $" << productPrices[i] << endl;
+            cout << "Quantity: " << productQuantities[i] << endl;
+            return;
+        }
+    }
+    cout << "Product not found." << endl;
+}
 
 //function to update products
 void updateProduct(int id, string name, string category, double price, int quantity) {
