@@ -34,9 +34,9 @@ This project is developed as part of the Fundamentals of Programming course. The
 
 
 ## Contributors
-- Biniyam Kinfe [https://github.com/biniKin]
-- Biniyam Yalew [https://github.com/BinyamYalew]
-- Amen Teshome [https://github.com/ATRam3]
+- [Biniyam Kinfe] (https://github.com/biniKin)
+- [Biniyam Yalew] (https://github.com/BinyamYalew)
+- [Amen Teshome] (https://github.com/ATRam3)
 - Amir Abduljelil
 - Betsegaw Tesfaye
-- Degaga Desta [https://github.com/degagadesta]
+- [Degaga Desta] (https://github.com/degagadesta)
