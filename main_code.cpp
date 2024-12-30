@@ -45,7 +45,18 @@ void printProducts() {
 }
 
 //function to save to file
-
+void saveInventoryToFile(string filename) {
+    ofstream file(filename);
+    if (file.is_open()) {
+        for (int i = 0; i < productCount; i++) {
+            file << "ID: " << productIDs[i] << "," << "Name: " << productNames[i] << "," << "Categorie: " << productCategories[i] << "," << "Price: " << productPrices[i] << "," << "Quan: " << productQuantities[i] << endl;
+        }
+        file.close();
+        cout << "Inventory saved to file." << endl;
+    } else {
+        cout << "Error: Could not open file." << endl;
+    }
+}
 
 //calling main function
 int main(){
