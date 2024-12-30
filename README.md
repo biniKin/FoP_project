@@ -37,6 +37,6 @@ This project is developed as part of the Fundamentals of Programming course. The
 - [Biniyam Kinfe] (https://github.com/biniKin)
 - [Biniyam Yalew] (https://github.com/BinyamYalew)
 - [Amen Teshome] (https://github.com/ATRam3)
-- Amir Abduljelil
-- Betsegaw Tesfaye (https://github.com/btsquare00)
+- [Amir Abduljelil] (https://github.com/AmirA24-art)
+- [Betsegaw Tesfaye] (https://github.com/btsquare00)
 - [Degaga Desta] (https://github.com/degagadesta)
