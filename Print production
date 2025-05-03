@@ -1,0 +1,60 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <sstream>
+
+using namespace std;
+
+const int MAX_PRODUCTS = 100;
+int productIDs[MAX_PRODUCTS];
+string productNames[MAX_PRODUCTS];
+string productCategories[MAX_PRODUCTS];
+double productPrices[MAX_PRODUCTS];
+int productQuantities[MAX_PRODUCTS];
+int productCount = 0;
+
+
+
+// function to print all products in the inventory
+void printProducts() {
+    for (int i = 0; i < productCount; i++) {
+        cout << "ID: " << productIDs[i] << endl;
+        cout << "Name: " << productNames[i] << endl;
+        cout << "Category: " << productCategories[i] << endl;
+        cout << "Price: $" << productPrices[i] << endl;
+        cout << "Quantity: " << productQuantities[i] << endl;
+        cout << "------------------------" << endl;
+    }
+}
+
+// function to save inventory to a file
+void saveInventoryToFile(string filename) {
+    ofstream file(filename);
+    if (file.is_open()) {
+        for (int i = 0; i < productCount; i++) {
+            file << "ID: " << productIDs[i] << "," << "Name: " << productNames[i] << "," << "Categorie: " << productCategories[i] << "," << "Price: " << productPrices[i] << "," << "Quan: " << productQuantities[i] << endl;
+        }
+        file.close();
+        cout << "Inventory saved to file." << endl;
+    } else {
+        cout << "Error: Could not open file." << endl;
+    }
+}
+
+
+int main() {
+  
+    char choice;
+    do {
+ cout << "5. View all products" << endl;
+    cin >> choice;
+
+ switch (choice) {
+
+ case '5':
+            printProducts();
+            break;
+    } while (true);
+
+    return 0;
+}
